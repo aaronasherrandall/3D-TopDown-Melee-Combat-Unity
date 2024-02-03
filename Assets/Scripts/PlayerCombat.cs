@@ -8,6 +8,7 @@ public class PlayerCombat : MonoBehaviour
 
     public GameObject weaponTrigger;
 
+
     public bool attacking = false;
     public float timeToAttack = 0.25f;
     public float timer = 0f;
@@ -38,5 +39,6 @@ public class PlayerCombat : MonoBehaviour
       // play an animation
       animator.SetTrigger("Attack");
       weaponTrigger.SetActive(attacking);
+
     }
 }
