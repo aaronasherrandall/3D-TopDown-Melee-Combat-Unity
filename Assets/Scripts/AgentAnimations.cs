@@ -18,6 +18,16 @@ public class AgentAnimations : MonoBehaviour
       _animator.SetFloat(_movementSpeed, speed);
     }
 
+    public void Attack() {
+      _animator.SetBool("Attack", true);
+      Debug.Log("Is Attacking");
+    }
+
+    public void EndAttack() {
+      _animator.SetBool("Attack", false);
+       Debug.Log("Attack Finished");
+    }
+
     // public void StepEvent() {
     //   OnStep.Invoke();
     // }
